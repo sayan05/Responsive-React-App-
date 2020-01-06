@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Responsive-React-App-/static/css/main.2c9b14dd.chunk.css",
+    "main.js": "/Responsive-React-App-/static/js/main.6f9b860e.chunk.js",
+    "main.js.map": "/Responsive-React-App-/static/js/main.6f9b860e.chunk.js.map",
+    "runtime-main.js": "/Responsive-React-App-/static/js/runtime-main.a5ad691c.js",
+    "runtime-main.js.map": "/Responsive-React-App-/static/js/runtime-main.a5ad691c.js.map",
+    "static/css/2.eb45ad44.chunk.css": "/Responsive-React-App-/static/css/2.eb45ad44.chunk.css",
+    "static/js/2.a3d4db76.chunk.js": "/Responsive-React-App-/static/js/2.a3d4db76.chunk.js",
+    "static/js/2.a3d4db76.chunk.js.map": "/Responsive-React-App-/static/js/2.a3d4db76.chunk.js.map",
+    "index.html": "/Responsive-React-App-/index.html",
+    "precache-manifest.53f53157f7b899658a87489a244bc318.js": "/Responsive-React-App-/precache-manifest.53f53157f7b899658a87489a244bc318.js",
+    "service-worker.js": "/Responsive-React-App-/service-worker.js",
+    "static/css/2.eb45ad44.chunk.css.map": "/Responsive-React-App-/static/css/2.eb45ad44.chunk.css.map",
+    "static/css/main.2c9b14dd.chunk.css.map": "/Responsive-React-App-/static/css/main.2c9b14dd.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a5ad691c.js",
+    "static/css/2.eb45ad44.chunk.css",
+    "static/js/2.a3d4db76.chunk.js",
+    "static/css/main.2c9b14dd.chunk.css",
+    "static/js/main.6f9b860e.chunk.js"
+  ]
+}
