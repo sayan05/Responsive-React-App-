@@ -15,8 +15,47 @@ class App extends Component{
 }
 }
 componentDidMount(){
-	fetch('https://jsonplaceholder.typicode.com/users').then(response=>response.json()).then(users=>this.setState({robots:users}))
+
+	let array1=[]
+	fetch('https://my-json-server.typicode.com/murtaza1112/card/posts')
+	 .then(response=>response.json())
+	 .then(users=> {
+	 	array1=array1.concat(users);
+	 	this.setState({robots:array1})
+	 })
+	fetch('https://my-json-server.typicode.com/murtaza1112/card1/posts').then(response=>response.json()).then(users=> {
+	 	array1=array1.concat(users);
+	 	this.setState({robots:array1})
+	 })
+	fetch('https://my-json-server.typicode.com/murtaza1112/cards/posts').then(response=>response.json()).then(users=> {
+	 	array1=array1.concat(users);
+	 	this.setState({robots:array1})
+	 })
+
+	 
+	/* async function getUserAsync(name) 
+    {
+    	
+  let response = await fetch(`https://my-json-server.typicode.com/murtaza1112/card/posts`);
+  let data = await response.json()
+  let array=data
+
+   response = await fetch(`https://my-json-server.typicode.com/murtaza1112/card1/posts`);
+   data = await response.json()
+  array=array.concat(data)
+
+  response = await fetch(`https://my-json-server.typicode.com/murtaza1112/cards/posts`);
+   data = await response.json()
+   array=array.concat(data)
+
+  return array;
+    }
+
+   getUserAsync().then(data => this.setState({robots:data})); */
+
 }
+
+
 onSeachChange=(event)=>{
 	this.setState({searchfield:event.target.value})
 }
@@ -26,6 +65,7 @@ render()
 	const filteredRobots = this.state.robots.filter(robots =>{
 		return robots.name.toLowerCase().includes(this.state.searchfield.toLowerCase())
 	})
+	console.log(this.searchfield)
     if(this.state.robots.length === 0){
 		return(<h1>Loading</h1>)
 	}
