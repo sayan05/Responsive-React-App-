@@ -6,6 +6,7 @@ import Scroll from './Scroll';
 import 'tachyons';
 import './App.css';
 import Error from './Error';
+
 class App extends Component{
 	constructor() {
 	super()
@@ -16,7 +17,7 @@ class App extends Component{
 }
 componentDidMount(){
 
-	let array1=[]
+	/*let array1=[]
 	fetch('https://my-json-server.typicode.com/murtaza1112/card/posts')
 	 .then(response=>response.json())
 	 .then(users=> {
@@ -30,10 +31,10 @@ componentDidMount(){
 	fetch('https://my-json-server.typicode.com/murtaza1112/cards/posts').then(response=>response.json()).then(users=> {
 	 	array1=array1.concat(users);
 	 	this.setState({robots:array1})
-	 })
+	 })*/
 
-	 
-	/* async function getUserAsync(name) 
+	 /*Slower but more organized approach (synchronous call)*/
+	async function getUserAsync(name) 
     {
     	
   let response = await fetch(`https://my-json-server.typicode.com/murtaza1112/card/posts`);
@@ -51,7 +52,7 @@ componentDidMount(){
   return array;
     }
 
-   getUserAsync().then(data => this.setState({robots:data})); */
+   getUserAsync().then(data => this.setState({robots:data})); 
 
 }
 
@@ -76,6 +77,7 @@ render()
     <SearchBox searchChange={this.onSeachChange}/>
     <Scroll id="Scroll">
        <Error>
+          <br/>
        		<CardList robots={filteredRobots}/>
        </Error>
     </Scroll>
