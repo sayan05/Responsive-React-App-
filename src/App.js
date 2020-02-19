@@ -6,7 +6,7 @@ import Scroll from './Scroll';
 import 'tachyons';
 import './App.css';
 import Error from './Error';
-
+import Particles from 'react-particles-js';
 class App extends Component{
 	constructor() {
 	super()
@@ -73,6 +73,30 @@ render()
 	else{
   return (
     <div className="tc">
+    <Particles className='Particles'
+    params={{
+      "particles": {
+          "number": {
+              "value": 50,
+              "density": {
+                "enable": true,
+                "value_area": 500
+
+              }
+          },
+          "size": {
+              "value": 3
+          }
+      },
+      "interactivity": {
+          "events": {
+              "onhover": {
+                  "enable": true,
+                  "mode": "repulse"
+              }
+          }
+      }
+  }} />
     <h1>RoboFriends</h1>    
     <SearchBox searchChange={this.onSeachChange}/>
     <Scroll id="Scroll">
