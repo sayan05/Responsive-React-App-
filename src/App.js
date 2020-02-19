@@ -81,6 +81,7 @@ render()
        		<CardList robots={filteredRobots}/>
        </Error>
     </Scroll>
+    <footer>made with love<img height="20px" width="20px" src="https://img.icons8.com/flat_round/64/000000/filled-like.png"></img></footer>
     </div>
   );
 }
